@@ -3,7 +3,6 @@ import type { LintConfigContribution, OxlintConfig } from './types'
 export function mergeContributions(
   ...contributions: LintConfigContribution[]
 ): OxlintConfig {
-  const categories: OxlintConfig['categories'] = {}
   const rules: Record<string, any> = {}
   const overrides: OxlintConfig['overrides'] = []
   const globals: OxlintConfig['globals'] = {}
@@ -16,7 +15,6 @@ export function mergeContributions(
   contributions.forEach((contribution) => {
     contribution.plugins?.forEach((plugin) => plugins.push(plugin))
 
-    Object.assign(categories, contribution.categories)
     Object.assign(rules, contribution.rules)
     Object.assign(globals, contribution.globals)
     Object.assign(env, contribution.env)
@@ -29,7 +27,6 @@ export function mergeContributions(
 
   return {
     plugins,
-    categories,
     rules,
     overrides,
     globals,

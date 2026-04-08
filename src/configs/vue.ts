@@ -10,10 +10,15 @@ export function createVueConfig(options: CreateVueConfigOptions = {}): LintConfi
   return {
     plugins: ['vue'],
     rules: {
+      'vue/no-arrow-functions-in-watch': 'error',
+      'vue/no-deprecated-destroyed-lifecycle': version === 2 ? 'off' : 'error',
+      'vue/no-export-in-script-setup': 'error',
+      'vue/no-lifecycle-after-await': 'error',
       'vue/no-multiple-slot-args': 'warn',
-      ...(version === 2
-        ? { 'vue/no-deprecated-destroyed-lifecycle': 'off' }
-        : {}),
+      'vue/no-this-in-before-route-enter': 'error',
+      'vue/prefer-import-from-vue': 'error',
+      'vue/valid-define-emits': 'error',
+      'vue/valid-define-props': 'error',
     },
     globals: {
       computed: 'readonly',
