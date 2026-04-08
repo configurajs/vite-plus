@@ -1,3 +1,10 @@
+## [0.1.7](https://github.com/configurajs/vite-plus/compare/v0.1.6...v0.1.7) (2026-04-08)
+
+
+### Features
+
+* disable specific TypeScript and JavaScript linting rules ([edce745](https://github.com/configurajs/vite-plus/commit/edce745d0fc94e838194a0e672b4dfdf41249ddd))
+
 ## [0.1.6](https://github.com/configurajs/vite-plus/compare/v0.1.5...v0.1.6) (2026-04-08)
 
 
