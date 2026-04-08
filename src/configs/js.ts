@@ -3,7 +3,7 @@ import type { LintConfigContribution } from '../types'
 export function createJsConfig(): LintConfigContribution {
   return {
     plugins: ['eslint', 'oxc', 'unicorn', 'import'],
-    categories: {},
+    categories: { correctness: 'off' },
     env: {
       browser: true,
       es2021: true,
