@@ -1,6 +1,6 @@
 {
   "name": "@configurajs/vite-plus",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A simple vite-plus lint configuration (oxlint)",
   "keywords": [
     "oxlint",

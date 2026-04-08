@@ -1,3 +1,10 @@
+## [0.1.8](https://github.com/configurajs/vite-plus/compare/v0.1.7...v0.1.8) (2026-04-08)
+
+
+### Features
+
+* add categories to LintConfigContribution and update js config ([b7a7b4a](https://github.com/configurajs/vite-plus/commit/b7a7b4abf6bbbbfa481f5e7080332df3b747f57f))
+
 ## [0.1.7](https://github.com/configurajs/vite-plus/compare/v0.1.6...v0.1.7) (2026-04-08)
 
 
