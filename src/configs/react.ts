@@ -1,7 +1,7 @@
-import type { LintConfigContribution, LintOverride } from '../types'
+import type { LintConfigContribution, OxlintOverride } from '../types'
 
 export function createReactConfig(): LintConfigContribution {
-  const reactOverride: LintOverride = {
+  const reactOverride: OxlintOverride = {
     files: ['**/*.?([cm])[jt]s?(x)'],
     rules: {
       'react/jsx-no-duplicate-props': 'warn',

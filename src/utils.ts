@@ -1,16 +1,16 @@
-import type { LintConfig, LintConfigContribution } from './types'
+import type { LintConfigContribution, OxlintConfig } from './types'
 
 export function mergeContributions(
   ...contributions: LintConfigContribution[]
-): LintConfig {
-  const categories: LintConfig['categories'] = {}
+): OxlintConfig {
+  const categories: OxlintConfig['categories'] = {}
   const rules: Record<string, any> = {}
-  const overrides: LintConfig['overrides'] = []
-  const globals: LintConfig['globals'] = {}
+  const overrides: OxlintConfig['overrides'] = []
+  const globals: OxlintConfig['globals'] = {}
   const env: Record<string, boolean> = {}
   const settings: Record<string, any> = {}
   const plugins: Array<
-    LintConfig['plugins'] extends (infer T)[] | undefined ? T : never
+    OxlintConfig['plugins'] extends (infer T)[] | undefined ? T : never
   > = []
 
   contributions.forEach((contribution) => {

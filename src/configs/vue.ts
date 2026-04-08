@@ -1,4 +1,4 @@
-import type { LintConfigContribution, LintOverride, RuleValue } from '../types'
+import type { DummyRule, LintConfigContribution, OxlintOverride } from '../types'
 
 export interface CreateVueConfigOptions {
   version?: 2 | 3
@@ -7,7 +7,7 @@ export interface CreateVueConfigOptions {
 export function createVueConfig(options: CreateVueConfigOptions = {}): LintConfigContribution {
   const { version = 3 } = options
 
-  const versionSpecificRules: Record<string, RuleValue> =
+  const versionSpecificRules: Record<string, DummyRule> =
     version === 2
       ? {
           'vue/no-multiple-template-root': 'error',
@@ -44,7 +44,7 @@ export function createVueConfig(options: CreateVueConfigOptions = {}): LintConfi
           'vue/no-expose-after-await': 'error',
         }
 
-  const vueOverride: LintOverride = {
+  const vueOverride: OxlintOverride = {
     files: ['**/*.vue'],
     rules: {
       'vue/comment-directive': 'error',

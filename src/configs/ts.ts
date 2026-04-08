@@ -1,4 +1,4 @@
-import type { LintConfigContribution, LintOverride } from '../types'
+import type { LintConfigContribution, OxlintOverride } from '../types'
 
 export interface CreateTsConfigOptions {
   exts?: string[]
@@ -9,7 +9,7 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): LintConfigC
 
   const files = ['**/*.?([cm])ts', '**/*.?([cm])tsx', ...exts.map((ext) => `**/*.${ext}`)]
 
-  const tsOverride: LintOverride = {
+  const tsOverride: OxlintOverride = {
     files,
     rules: {
       'no-unused-expressions': 'off',

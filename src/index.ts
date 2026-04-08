@@ -8,16 +8,16 @@ import {
   type CreateVueConfigOptions,
 } from './configs'
 import type {
-  LintConfig,
+  DummyRule,
   LintConfigContribution,
-  LintOverride,
-  RuleValue,
+  OxlintConfig,
+  OxlintOverride,
 } from './types'
 import { mergeContributions } from './utils'
 
 export type LintOptionsVue = Partial<Pick<CreateVueConfigOptions, 'version'>>
 
-export type { LintConfig, LintOverride, RuleValue } from './types'
+export type { DummyRule, OxlintConfig, OxlintOverride } from './types'
 
 export type { CreateVueConfigOptions } from './configs'
 
@@ -45,7 +45,7 @@ export interface LintOptions {
   /**
    * Custom rules
    */
-  rules?: Record<string, RuleValue>
+  rules?: Record<string, DummyRule>
   /**
    * Ignore file patterns
    */
@@ -53,10 +53,10 @@ export interface LintOptions {
   /**
    * Additional overrides
    */
-  overrides?: LintOverride[]
+  overrides?: OxlintOverride[]
 }
 
-export function lint(options: LintOptions = {}): LintConfig {
+export function lint(options: LintOptions = {}): OxlintConfig {
   const {
     ts = true,
     vue = true,

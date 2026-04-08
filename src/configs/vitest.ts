@@ -1,7 +1,7 @@
-import type { LintConfigContribution, LintOverride } from '../types'
+import type { LintConfigContribution, OxlintOverride } from '../types'
 
 export function createVitestConfig(): LintConfigContribution {
-  const vitestOverride: LintOverride = {
+  const vitestOverride: OxlintOverride = {
     files: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
     rules: {
       'vitest/no-commented-out-tests': 'warn',
