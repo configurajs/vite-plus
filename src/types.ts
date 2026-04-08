@@ -4,5 +4,5 @@ export type { DummyRule, OxlintConfig, OxlintOverride } from 'oxlint'
 
 export type LintConfigContribution = Pick<
   OxlintConfig,
-  'plugins' | 'rules' | 'overrides' | 'globals' | 'env' | 'settings'
+  'plugins' | 'categories' | 'rules' | 'overrides' | 'globals' | 'env' | 'settings'
 >
