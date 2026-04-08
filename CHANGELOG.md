@@ -1,4 +1,11 @@
-## 0.1.1 (2026-04-08)
+## [0.1.2](https://github.com/configurajs/vite-plus/compare/v0.1.1...v0.1.2) (2026-04-08)
+
+
+### Code Refactoring
+
+* update linting types to use OxlintOverride and DummyRule ([ddaee31](https://github.com/configurajs/vite-plus/commit/ddaee3167c2f7d116aff78ed4b811d10f6c7a243))
+
+## [0.1.1](https://github.com/configurajs/vite-plus/compare/b3668d5213700dbcbcc474ea4c655a69ce8f3476...v0.1.1) (2026-04-08)
 
 
 ### Features
