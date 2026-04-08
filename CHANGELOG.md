@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/configurajs/vite-plus/compare/v0.1.4...v0.1.5) (2026-04-08)
+
+
+### Features
+
+* add oxfmt as a dev dependency and update formatting options ([53cab3c](https://github.com/configurajs/vite-plus/commit/53cab3cd98dd011cbc21b6930cbbc74499690d9e))
+
 ## [0.1.4](https://github.com/configurajs/vite-plus/compare/v0.1.3...v0.1.4) (2026-04-08)
 
 
