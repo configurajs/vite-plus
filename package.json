@@ -1,0 +1,49 @@
+{
+  "name": "@configurajs/vite-plus",
+  "version": "0.1.0",
+  "description": "A simple vite-plus lint configuration (oxlint)",
+  "keywords": [
+    "oxlint",
+    "vite-plus",
+    "lint",
+    "preset",
+    "config"
+  ],
+  "bugs": {
+    "url": "https://github.com/configurajs/vite-plus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configurajs/vite-plus.git"
+  },
+  "license": "MIT",
+  "author": "haoziqaq <357229046@qq.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": "./dist/index.mjs",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vp pack",
+    "clean": "rimraf node_modules dist",
+    "dev": "vp pack --watch",
+    "release": "pnpm build && vr release"
+  },
+  "devDependencies": {
+    "@varlet/release": "^1.1.0",
+    "oxlint": "^1.59.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.3.3",
+    "vite": "^8.0.1",
+    "vite-plus": "^0.1.16"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "engines": {
+    "node": ">=22.12.0",
+    "pnpm": ">=10.0"
+  }
+}
