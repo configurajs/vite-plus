@@ -22,6 +22,10 @@ export function createTsConfig(options: CreateTsConfigOptions = {}): LintConfigC
       'prefer-rest-params': 'error',
       'prefer-spread': 'error',
 
+      'typescript/no-misused-spread': 'off',
+      'typescript/unbound-method': 'off',
+      'typescript/require-array-sort-compare': 'off',
+
       'typescript/no-array-constructor': 'error',
       'typescript/no-duplicate-enum-values': 'error',
       'typescript/no-extra-non-null-assertion': 'error',

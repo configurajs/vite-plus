@@ -43,6 +43,8 @@ export function createJsConfig(): LintConfigContribution {
       'import/no-duplicates': 'error',
       'import/no-mutable-exports': 'error',
       'import/no-self-import': 'error',
+      'no-shadow-restricted-names': 'off',
+      'unicorn/no-thenable': 'off',
     },
   }
 }
