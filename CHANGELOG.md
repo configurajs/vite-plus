@@ -1,3 +1,10 @@
+## [0.1.6](https://github.com/configurajs/vite-plus/compare/v0.1.5...v0.1.6) (2026-04-08)
+
+
+### Features
+
+* update linting rules across JavaScript, TypeScript, React, Vue, and Vitest configurations ([feec15b](https://github.com/configurajs/vite-plus/commit/feec15b21f8bdc51d66bbe82973113ea4478ee63))
+
 ## [0.1.5](https://github.com/configurajs/vite-plus/compare/v0.1.4...v0.1.5) (2026-04-08)
 
 
