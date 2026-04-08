@@ -1,3 +1,10 @@
+## [0.1.4](https://github.com/configurajs/vite-plus/compare/v0.1.3...v0.1.4) (2026-04-08)
+
+
+### Code Refactoring
+
+* disable specific TypeScript and import linting rules ([d15a89f](https://github.com/configurajs/vite-plus/commit/d15a89f05e7c1f26b97e570007f59286e101b3c3))
+
 ## [0.1.3](https://github.com/configurajs/vite-plus/compare/v0.1.2...v0.1.3) (2026-04-08)
 
 
