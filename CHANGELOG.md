@@ -1,3 +1,10 @@
+## [0.1.9](https://github.com/configurajs/vite-plus/compare/v0.1.8...v0.1.9) (2026-04-08)
+
+
+### Features
+
+* add categories handling in createJsConfig and mergeContributions ([a449a9c](https://github.com/configurajs/vite-plus/commit/a449a9c2d73fd3fc96ebbe1d1a7c7f7992c20bd7))
+
 ## [0.1.8](https://github.com/configurajs/vite-plus/compare/v0.1.7...v0.1.8) (2026-04-08)
 
 
