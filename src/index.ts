@@ -1,3 +1,5 @@
+import type { OxfmtConfig } from 'oxfmt'
+
 import {
   createIgnoresConfig,
   createJsConfig,
@@ -110,7 +112,9 @@ export function fmt() {
     semi: false,
     printWidth: 120,
     singleQuote: true,
-    sortImports: true,
+    sortImports: {
+      newlinesBetween: false,
+    },
     sortTailwindcss: true,
-  }
+  } satisfies OxfmtConfig
 }
