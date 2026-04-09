@@ -12,6 +12,7 @@
 - Vitest（默认开启）
 - 类型感知 lint
 - Oxfmt 格式化，支持 import 排序和 Tailwind CSS class 排序
+- 开箱即用的 lint-staged 预设
 
 ## 安装
 
@@ -43,16 +44,17 @@ export default fmt()
 
 ### Vite+ 配置文件
 
-如果你使用的是 [Vite+](https://viteplus.dev)，可以直接在 `vite.config.ts` 中配置 lint 和 fmt：
+如果你使用的是 [Vite+](https://viteplus.dev)，可以直接在 `vite.config.ts` 中配置 lint、fmt 和 staged：
 
 ```ts
 // vite.config.ts
 import { defineConfig } from 'vite-plus'
-import { lint, fmt } from '@configurajs/vite-plus'
+import { lint, fmt, staged } from '@configurajs/vite-plus'
 
 export default defineConfig({
   lint: lint(),
   fmt: fmt(),
+  staged: staged(),
 })
 ```
 
@@ -72,6 +74,8 @@ lint({
   rules: {
     'no-console': 'error',
   },
+  // 忽略文件模式
+  ignores: ['**/generated/**'],
   // 额外的 overrides
   overrides: [
     {
@@ -81,6 +85,31 @@ lint({
   ],
 })
 ```
+
+### Fmt 选项
+
+```ts
+fmt({
+  // 忽略文件模式
+  ignores: ['**/generated/**'],
+})
+```
+
+### Staged
+
+`staged()` 返回一个预设的 lint-staged 配置：
+
+```ts
+staged()
+// 等同于：
+// {
+//   '*.{js,jsx,ts,tsx,vue}': ['vp fmt --no-error-on-unmatched-pattern', 'vp lint --fix'],
+//   '*.{md,json,yaml,yml,html,css,scss,less}': 'vp fmt --no-error-on-unmatched-pattern',
+// }
+```
+
+- `js / jsx / ts / tsx / vue` — 格式化 + lint 修复
+- `md / json / yaml / yml / html / css / scss / less` — 仅格式化
 
 ### VSCode 工作区配置
 

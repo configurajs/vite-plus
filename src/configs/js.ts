@@ -6,8 +6,8 @@ export function createJsConfig(): LintConfigContribution {
     categories: { correctness: 'off' },
     env: {
       browser: true,
-      es2021: true,
       node: true,
+      es2024: true
     },
     rules: {
       'constructor-super': 'error',

@@ -23,6 +23,15 @@ export type { DummyRule, OxlintConfig, OxlintOverride } from './types'
 
 export type { CreateVueConfigOptions } from './configs'
 
+export type StagedConfig = Record<string, string | string[]>
+
+export interface FmtOptions {
+  /**
+   * Ignore file patterns
+   */
+  ignores?: string[]
+}
+
 export interface LintOptions {
   /**
    * Enable TypeScript support
@@ -107,7 +116,16 @@ export function lint(options: LintOptions = {}): OxlintConfig {
   return config
 }
 
-export function fmt() {
+export function staged(): StagedConfig {
+  return {
+    '*.{js,jsx,ts,tsx,vue}': ['vp fmt --no-error-on-unmatched-pattern', 'vp lint --fix'],
+    '*.{md,json,yaml,yml,html,css,scss,less}': 'vp fmt --no-error-on-unmatched-pattern',
+  }
+}
+
+export function fmt(options: FmtOptions = {}): OxfmtConfig {
+  const { ignores = [] } = options
+
   return {
     semi: false,
     printWidth: 120,
@@ -116,5 +134,6 @@ export function fmt() {
       newlinesBetween: false,
     },
     sortTailwindcss: true,
-  } satisfies OxfmtConfig
+    ignorePatterns: createIgnoresConfig({ ignores }),
+  }
 }
