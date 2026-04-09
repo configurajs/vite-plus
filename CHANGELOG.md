@@ -1,3 +1,15 @@
+## [0.1.10](https://github.com/configurajs/vite-plus/compare/v0.1.9...v0.1.10) (2026-04-09)
+
+
+### Bug Fixes
+
+* update package description for clarity and accuracy ([a4f3616](https://github.com/configurajs/vite-plus/commit/a4f3616c9769f77efd8584eefbbf191e015962a0))
+
+
+### Features
+
+* add English and Chinese README files for documentation ([d19ee35](https://github.com/configurajs/vite-plus/commit/d19ee3595f39c5a886c4d0d78a6f0e44a37a48b4))
+
 ## [0.1.9](https://github.com/configurajs/vite-plus/compare/v0.1.8...v0.1.9) (2026-04-08)
 
 
