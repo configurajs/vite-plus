@@ -4,8 +4,8 @@
   "description": "Opinionated Oxlint + Oxfmt configuration preset for Vite+ projects",
   "keywords": [
     "oxlint",
+    "oxfmt",
     "vite-plus",
-    "lint",
     "preset",
     "config"
   ],
