@@ -56,8 +56,6 @@ export default defineConfig({
 })
 ```
 
-> **注意：** Oxc VSCode 插件目前无法识别 Vite+ 的配置文件（`vite.config.ts`）中的 lint 配置。如需 VSCode 集成，请使用独立的 `oxlint.config.ts` / `oxfmt.config.ts` 配置文件，或等待官方修复。
-
 ### Lint 选项
 
 ```ts
