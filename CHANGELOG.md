@@ -1,3 +1,10 @@
+## [0.1.11](https://github.com/configurajs/vite-plus/compare/v0.1.10...v0.1.11) (2026-04-09)
+
+
+### Bug Fixes
+
+* remove redundant keyword from package.json ([35606e0](https://github.com/configurajs/vite-plus/commit/35606e0f904d51804ec66c234b44611c1042714a))
+
 ## [0.1.10](https://github.com/configurajs/vite-plus/compare/v0.1.9...v0.1.10) (2026-04-09)
 
 
