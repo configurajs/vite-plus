@@ -1,0 +1,101 @@
+# @configurajs/vite-plus
+
+[English](./README.md)
+
+为 [Vite+](https://viteplus.dev) 项目提供的开箱即用 [Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) 配置预设。
+
+## 特性
+
+- TypeScript（默认开启）
+- Vue 3（默认开启）
+- React（按需开启）
+- Vitest（默认开启）
+- 类型感知 lint
+- Oxfmt 格式化，支持 import 排序和 Tailwind CSS class 排序
+
+## 安装
+
+```bash
+pnpm add -D @configurajs/vite-plus
+```
+
+## 使用
+
+### Oxc 配置文件
+
+在项目根目录创建 `oxlint.config.ts`：
+
+```ts
+// oxlint.config.ts
+import { lint } from '@configurajs/vite-plus'
+
+export default lint()
+```
+
+在项目根目录创建 `oxfmt.config.ts`：
+
+```ts
+// oxfmt.config.ts
+import { fmt } from '@configurajs/vite-plus'
+
+export default fmt()
+```
+
+### Vite+ 配置文件
+
+如果你使用的是 [Vite+](https://viteplus.dev)，可以直接在 `vite.config.ts` 中配置 lint 和 fmt：
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite'
+import { lint, fmt } from '@configurajs/vite-plus'
+
+export default defineConfig({
+  lint: lint(),
+  fmt: fmt(),
+})
+```
+
+> **注意：** Oxc VSCode 插件目前无法识别 Vite+ 的配置文件（`vite.config.ts`）中的 lint 配置。如需 VSCode 集成，请使用独立的 `oxlint.config.ts` / `oxfmt.config.ts` 配置文件，或等待官方修复。
+
+### Lint 选项
+
+```ts
+lint({
+  // 启用 TypeScript 支持（默认：true）
+  ts: true,
+  // 启用 Vue 支持，默认 Vue 3（默认：true）
+  vue: true, // 或 { version: 2 }
+  // 启用 React 支持（默认：false）
+  react: false,
+  // 启用 Vitest 支持（默认：true）
+  vitest: true,
+  // 自定义规则
+  rules: {
+    'no-console': 'error',
+  },
+  // 额外的 overrides
+  overrides: [
+    {
+      files: ['scripts/**'],
+      rules: { 'no-console': 'off' },
+    },
+  ],
+})
+```
+
+### VSCode 工作区配置
+
+在 `.vscode/settings.json` 中添加：
+
+```jsonc
+{
+  "prettier.enable": false,
+  "eslint.enable": false,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+}
+```
+
+## License
+
+MIT
