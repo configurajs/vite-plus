@@ -47,7 +47,7 @@ export default fmt()
 
 ```ts
 // vite.config.ts
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite-plus'
 import { lint, fmt } from '@configurajs/vite-plus'
 
 export default defineConfig({

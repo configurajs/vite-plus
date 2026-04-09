@@ -47,7 +47,7 @@ If you are using [Vite+](https://viteplus.dev), you can configure lint and fmt i
 
 ```ts
 // vite.config.ts
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite-plus'
 import { lint, fmt } from '@configurajs/vite-plus'
 
 export default defineConfig({
