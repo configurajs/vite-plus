@@ -1,3 +1,16 @@
+# [0.2.0](https://github.com/configurajs/vite-plus/compare/v0.1.11...v0.2.0) (2026-04-09)
+
+
+### Bug Fixes
+
+* remove note about Oxc VSCode extension limitations in README files ([ff9edca](https://github.com/configurajs/vite-plus/commit/ff9edcadd823e59c7d4c0b3702d82a192e73f765))
+* update import statement in README files to use 'vite-plus' ([431e9fb](https://github.com/configurajs/vite-plus/commit/431e9fb64b4f884105883c1d65f2d94b41a311fc))
+
+
+### Features
+
+* add lint-staged preset and update configuration options in README and source files ([e1d7569](https://github.com/configurajs/vite-plus/commit/e1d75693bc78b33236bfa22916e22ce9ea08e74b))
+
 ## [0.1.11](https://github.com/configurajs/vite-plus/compare/v0.1.10...v0.1.11) (2026-04-09)
 
 
