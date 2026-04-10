@@ -1,3 +1,10 @@
+## [0.2.2](https://github.com/configurajs/vite-plus/compare/v0.2.1...v0.2.2) (2026-04-10)
+
+
+### Bug Fixes
+
+* remove type-aware linting mention from README files ([dee261e](https://github.com/configurajs/vite-plus/commit/dee261eeef75e823624bb4a54d841fdd79f6459f))
+
 ## [0.2.1](https://github.com/configurajs/vite-plus/compare/v0.2.0...v0.2.1) (2026-04-10)
 
 
