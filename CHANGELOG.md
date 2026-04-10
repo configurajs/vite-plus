@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/configurajs/vite-plus/compare/v0.2.0...v0.2.1) (2026-04-10)
+
+
+### Bug Fixes
+
+* remove TypeScript options from lint function configuration ([05d4aa8](https://github.com/configurajs/vite-plus/commit/05d4aa874593e5560edca46e18841bf457fa1fde))
+
 # [0.2.0](https://github.com/configurajs/vite-plus/compare/v0.1.11...v0.2.0) (2026-04-09)
 
 
