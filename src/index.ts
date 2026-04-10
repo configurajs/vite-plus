@@ -104,13 +104,6 @@ export function lint(options: LintOptions = {}): OxlintConfig {
 
   config.ignorePatterns = createIgnoresConfig({ ignores })
 
-  if (ts) {
-    config.options = {
-      typeAware: true,
-      typeCheck: true,
-    }
-  }
-
   config.overrides = [...(config.overrides ?? []), ...overrides]
 
   return config
