@@ -35,6 +35,7 @@ const DEFAULT_IGNORES = [
   '**/__snapshots__',
   '**/auto-import?(s).d.ts',
   '**/components.d.ts',
+  '**/.vite-hooks/**'
 ]
 
 export function createIgnoresConfig(options: CreateIgnoresConfigOptions = {}): string[] {
