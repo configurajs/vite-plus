@@ -1,3 +1,10 @@
+## [0.2.3](https://github.com/configurajs/vite-plus/compare/v0.2.2...v0.2.3) (2026-04-12)
+
+
+### Bug Fixes
+
+* add '.vite-hooks' to default ignores list ([996815a](https://github.com/configurajs/vite-plus/commit/996815a2c8ca5eee3b941e36793940a96a4c0a4e))
+
 ## [0.2.2](https://github.com/configurajs/vite-plus/compare/v0.2.1...v0.2.2) (2026-04-10)
 
 
