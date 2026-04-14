@@ -1,3 +1,10 @@
+## [0.2.4](https://github.com/configurajs/vite-plus/compare/v0.2.3...v0.2.4) (2026-04-14)
+
+
+### Bug Fixes
+
+* separate Vue linting configuration for easier overrides ([879ba08](https://github.com/configurajs/vite-plus/commit/879ba08060c787614868c5a2870eee7b0d5a36cb))
+
 ## [0.2.3](https://github.com/configurajs/vite-plus/compare/v0.2.2...v0.2.3) (2026-04-12)
 
 
