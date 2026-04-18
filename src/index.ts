@@ -111,10 +111,10 @@ export function lint(options: LintOptions = {}): OxlintConfig {
 
 export function staged(): StagedConfig {
   return {
-    '*.{js,jsx,ts,tsx}': ['vp fmt --no-error-on-unmatched-pattern', 'vp lint --fix'],
+    '*.{js,jsx,ts,tsx}': ['vp fmt --no-error-on-unmatched-pattern', 'vp lint --fix --no-error-on-unmatched-pattern'],
     '*.{md,json,yaml,yml,html,css,scss,less}': 'vp fmt --no-error-on-unmatched-pattern',
     // Easy to override
-    '*.vue': ['vp fmt --no-error-on-unmatched-pattern', 'vp lint --fix'],
+    '*.vue': ['vp fmt --no-error-on-unmatched-pattern', 'vp lint --fix --no-error-on-unmatched-pattern'],
   }
 }
 
