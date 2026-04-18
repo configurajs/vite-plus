@@ -1,6 +1,6 @@
 {
   "name": "@configurajs/vite-plus",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Opinionated Oxlint + Oxfmt configuration preset for Vite+ projects",
   "keywords": [
     "oxlint",

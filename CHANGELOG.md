@@ -1,3 +1,10 @@
+## [0.2.5](https://github.com/configurajs/vite-plus/compare/v0.2.4...v0.2.5) (2026-04-18)
+
+
+### Bug Fixes
+
+* ensure '--no-error-on-unmatched-pattern' is applied to linting for all file types ([d28c651](https://github.com/configurajs/vite-plus/commit/d28c651e36c2a5a329297736a789e1e8a1edafd0))
+
 ## [0.2.4](https://github.com/configurajs/vite-plus/compare/v0.2.3...v0.2.4) (2026-04-14)
 
 
